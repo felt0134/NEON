@@ -29,5 +29,6 @@ test_df<-rasterToPoints(stacked)
 View(test_df)
 head(test_df)
 test_df$ratio<-test_df$NEON_D06_KONZ_DP3_702000_4325000_MSI/test_df$ratio
-
+plot(NEON_D06_KONZ_DP3_702000_4325000_NMDI ~NEON_D06_KONZ_DP3_702000_4325000_NDWI,data=test_df)
 #can you isolate canopy and soil water contetnf rom these?
+summary(test_df)
